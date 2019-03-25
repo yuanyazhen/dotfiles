@@ -1,15 +1,17 @@
 [user]
-	name = Paul Miller
-	email = paul@paulmillr.com
+	name = yuanyazhen
+	email = yuanyazhen@xiaojukeji.com
 
 [github]
-  user = paulmillr
+  user = yuanyazhen
 
 [alias]
   discard = reset --hard HEAD
-  ci = commit
-  ch = checkout
+  ci = commit -v
+  co = checkout
   d = diff
+  br = branch
+  st = status
 
   graph = log --graph
   last = log -n 10
