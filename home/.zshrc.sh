@@ -337,3 +337,5 @@ function tarbz2() {
 }
 
 alias untarbz2='tar -xvjf'
+# Add Visual Studio Code (code)
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"

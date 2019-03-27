@@ -1,0 +1,11 @@
+#
+f=$(readlink ~/.zshrc)
+ZSH=$(dirname $f)
+ZSH_THEME="spaceship"
+
+SPACESHIP_TIME_SHOW=true
+SPACESHIP_EXIT_CODE_SHOW=true
+
+source "${ZSH}/init.sh"
+d=$(dirname $ZSH)
+. $d/bash/aliases

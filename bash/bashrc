@@ -1,0 +1,16 @@
+
+# Case-insensitive globbing (used in pathname expansion)
+# Append to the Bash history file, rather than overwriting it
+# Autocorrect typos in path names when using `cd`
+# Enable some Bash 4 features when possible:
+# * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
+# * Recursive globbing, e.g. `echo **/*.txt`
+for option in autocd globstar nocaseglob cdspell histappend; do
+  shopt -s "$option" 2> /dev/null;
+done;
+
+f=$(readlink -f $HOME/.bashrc)
+d=$(dirname $f)
+. "$d/prompt"
+. "$d/aliases"
+. /root/confbook/bin/path-helper
